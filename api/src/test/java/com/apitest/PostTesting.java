@@ -54,6 +54,9 @@ public class PostTesting {
         .assertThat()
         .body(matchesJsonSchemaInClasspath("user-collection.json"))
         .statusCode(200)
+
+        // should add the matchers of body's id in order to pass the test
+
         .body("title", Matchers.equalTo("mr"))
         .body("firstName", Matchers.equalTo("Radjiman"))
         .body("lastName", Matchers.equalTo("Wedyodinigrat"))
@@ -67,6 +70,8 @@ public class PostTesting {
         .body("location.state", Matchers.equalTo("Jawa Barat"))
         .body("location.country", Matchers.equalTo("Indonesia"))
         .body("location.timezone", Matchers.equalTo("+7:00"));
+
+        // should add the matchers of body's registerDate and updateDate
      }
 
     // TC
@@ -99,6 +104,14 @@ public class PostTesting {
         .assertThat()
         .statusCode(400)
         .body("message", Matchers.equalTo("firstName must be at least 2 characters long"));
+
+        // in my case, the returned result of body looks like this:
+        // {
+        //   "error": "BODY_NOT_VALID",
+        //   "data": {
+        //     "firstName": "Path `firstName` (`R`) is shorter than the minimum allowed length (2)."
+        //   }
+        // }
     }
 
     // TC
