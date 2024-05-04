@@ -1,0 +1,4 @@
+com\apitest\PostTesting.class
+com\apitest\DeleteTesting.class
+com\apitest\PutTesting.class
+com\apitest\GetTesting.class
