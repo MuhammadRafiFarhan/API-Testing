@@ -49,13 +49,14 @@ class UpdateTest {
     void update_user_title_mr() {
         given()
                 .header("app-id", dotenv.get("APP_ID"))
+                .header("Content-Type", "application/json")
                 .body("{\"title\":\"mr\"}")
-                .put("/user/60d0fe4f5311236168a109cb")
+                .put("/user/66370b6310f9d4fd57438990")
                 .then()
                 .assertThat()
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("user-schema.json"))
-                .body("title", Matchers.equalTo("miss"));
+                .body("title", Matchers.equalTo("mr"));
     }
 
     @Test
@@ -63,13 +64,14 @@ class UpdateTest {
     void update_user_title_ms() {
         given()
                 .header("app-id", dotenv.get("APP_ID"))
+                .header("Content-Type", "application/json")
                 .body("{\"title\":\"ms\"}")
-                .put("/user/60d0fe4f5311236168a109cb")
+                .put("/user/66370b6310f9d4fd57438990")
                 .then()
                 .assertThat()
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("user-schema.json"))
-                .body("title", Matchers.equalTo("miss"));
+                .body("title", Matchers.equalTo("ms"));
     }
 
     @Test
@@ -77,13 +79,14 @@ class UpdateTest {
     void update_user_title_mrs() {
         given()
                 .header("app-id", dotenv.get("APP_ID"))
+                .header("Content-Type", "application/json")
                 .body("{\"title\":\"mrs\"}")
-                .put("/user/60d0fe4f5311236168a109cb")
+                .put("/user/66370b6310f9d4fd57438990")
                 .then()
                 .assertThat()
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("user-schema.json"))
-                .body("title", Matchers.equalTo("miss"));
+                .body("title", Matchers.equalTo("mrs"));
     }
 
     @Test
@@ -91,8 +94,9 @@ class UpdateTest {
     void update_user_title_miss() {
         given()
                 .header("app-id", dotenv.get("APP_ID"))
+                .header("Content-Type", "application/json")
                 .body("{\"title\":\"miss\"}")
-                .put("/user/60d0fe4f5311236168a109cb")
+                .put("/user/66370b6310f9d4fd57438990")
                 .then()
                 .assertThat()
                 .statusCode(200)
@@ -105,13 +109,14 @@ class UpdateTest {
     void update_user_title_dr() {
         given()
                 .header("app-id", dotenv.get("APP_ID"))
+                .header("Content-Type", "application/json")
                 .body("{\"title\":\"dr\"}")
-                .put("/user/60d0fe4f5311236168a109cb")
+                .put("/user/66370b6310f9d4fd57438990")
                 .then()
                 .assertThat()
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("user-schema.json"))
-                .body("title", Matchers.equalTo("miss"));
+                .body("title", Matchers.equalTo("dr"));
     }
 
     @Test
@@ -119,12 +124,13 @@ class UpdateTest {
     void update_user_title_null() {
         given()
                 .header("app-id", dotenv.get("APP_ID"))
+                .header("Content-Type", "application/json")
                 .body("{\"title\":\"\"}")
-                .put("/user/60d0fe4f5311236168a109cb")
+                .put("/user/66370b6310f9d4fd57438990")
                 .then()
                 .assertThat()
                 .statusCode(200)
                 .body(matchesJsonSchemaInClasspath("user-schema.json"))
-                .body("title", Matchers.equalTo("miss"));
+                .body("title", Matchers.equalTo(""));
     }
 }

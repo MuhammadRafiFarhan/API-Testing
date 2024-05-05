@@ -44,10 +44,10 @@ mestilah memenuhi beberapa persyaratan berikut:
 3. Buka terminal di dalam text editor tersebut, lalu jalankan perintah berikut untuk menginstall dependencies Maven dari file `api/pom.xml`:
 
    ```bash
-   mvn clean install
+   mvn clean install -DskipTests
    ```
 
-4. Tunggu hingga proses installasi dependencies selesai. Setelah itu, proyek siap untuk dijalankan.
+4. Tunggu hingga proses installasi dependencies sukses dan selesai. Setelah itu, proyek siap untuk dijalankan.
 
 ### Folder Structure
 Berikut adalah struktur folder dari proyek ini:

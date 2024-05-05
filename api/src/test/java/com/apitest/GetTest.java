@@ -37,7 +37,7 @@ class GetTest {
     void get_valid_user_id() {
         given()
             .header("app-id", dotenv.get("APP_ID"))
-            .get("/user/60d0fe4f5311236168a109cb")
+            .get("/user/66370b6310f9d4fd57438990")
             .then()
             .assertThat()
             .statusCode(200)
