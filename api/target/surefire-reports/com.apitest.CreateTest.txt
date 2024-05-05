@@ -1,0 +1,94 @@
+-------------------------------------------------------------------------------
+Test set: com.apitest.CreateTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 28.17 s <<< FAILURE! - in com.apitest.CreateTest
+com.apitest.CreateTest.create_valid_user_maksimum_firstname  Time elapsed: 22.159 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["email","firstName","id","lastName"])
+    level: "error"
+    schema: {"loadingURI":"file:/D:/Lainnya/Kuliah/Semester%206/PPL/Praktek/Praktek%207/api/target/test-classes/user-schema.json#","pointer":"/definitions/user"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["email","firstName","id","lastName"]
+    missing: ["email","firstName","id","lastName"]
+
+  Actual: {"error":"BODY_NOT_VALID","data":{"email":"Email already used"}}
+
+	at com.apitest.CreateTest.create_valid_user_maksimum_firstname(CreateTest.java:230)
+
+com.apitest.CreateTest.create_valid_user_minimum_lastname  Time elapsed: 0.748 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["email","firstName","id","lastName"])
+    level: "error"
+    schema: {"loadingURI":"file:/D:/Lainnya/Kuliah/Semester%206/PPL/Praktek/Praktek%207/api/target/test-classes/user-schema.json#","pointer":"/definitions/user"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["email","firstName","id","lastName"]
+    missing: ["email","firstName","id","lastName"]
+
+  Actual: {"error":"BODY_NOT_VALID","data":{"email":"Email already used"}}
+
+	at com.apitest.CreateTest.create_valid_user_minimum_lastname(CreateTest.java:275)
+
+com.apitest.CreateTest.create_valid_user_maksimum_lastname  Time elapsed: 0.472 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["email","firstName","id","lastName"])
+    level: "error"
+    schema: {"loadingURI":"file:/D:/Lainnya/Kuliah/Semester%206/PPL/Praktek/Praktek%207/api/target/test-classes/user-schema.json#","pointer":"/definitions/user"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["email","firstName","id","lastName"]
+    missing: ["email","firstName","id","lastName"]
+
+  Actual: {"error":"BODY_NOT_VALID","data":{"email":"Email already used"}}
+
+	at com.apitest.CreateTest.create_valid_user_maksimum_lastname(CreateTest.java:320)
+
+com.apitest.CreateTest.create_valid_user_id  Time elapsed: 0.403 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["email","firstName","id","lastName"])
+    level: "error"
+    schema: {"loadingURI":"file:/D:/Lainnya/Kuliah/Semester%206/PPL/Praktek/Praktek%207/api/target/test-classes/user-schema.json#","pointer":"/definitions/user"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["email","firstName","id","lastName"]
+    missing: ["email","firstName","id","lastName"]
+
+  Actual: {"error":"BODY_NOT_VALID","data":{"email":"Email already used"}}
+
+	at com.apitest.CreateTest.create_valid_user_id(CreateTest.java:50)
+
+com.apitest.CreateTest.create_valid_user_minimum_firstname  Time elapsed: 0.476 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["email","firstName","id","lastName"])
+    level: "error"
+    schema: {"loadingURI":"file:/D:/Lainnya/Kuliah/Semester%206/PPL/Praktek/Praktek%207/api/target/test-classes/user-schema.json#","pointer":"/definitions/user"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["email","firstName","id","lastName"]
+    missing: ["email","firstName","id","lastName"]
+
+  Actual: {"error":"BODY_NOT_VALID","data":{"email":"Email already used"}}
+
+	at com.apitest.CreateTest.create_valid_user_minimum_firstname(CreateTest.java:185)
+

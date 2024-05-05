@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: com.apitest.UpdateTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 3.467 s <<< FAILURE! - in com.apitest.UpdateTest
+com.apitest.UpdateTest.update_user_title_mrs  Time elapsed: 0.473 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at com.apitest.UpdateTest.update_user_title_mrs(UpdateTest.java:84)
+
+com.apitest.UpdateTest.update_user_title_miss  Time elapsed: 0.424 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at com.apitest.UpdateTest.update_user_title_miss(UpdateTest.java:98)
+
+com.apitest.UpdateTest.update_user_title_null  Time elapsed: 0.456 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at com.apitest.UpdateTest.update_user_title_null(UpdateTest.java:126)
+
+com.apitest.UpdateTest.update_user_title_dr  Time elapsed: 0.362 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at com.apitest.UpdateTest.update_user_title_dr(UpdateTest.java:112)
+
+com.apitest.UpdateTest.update_user_title_mr  Time elapsed: 0.607 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at com.apitest.UpdateTest.update_user_title_mr(UpdateTest.java:56)
+
+com.apitest.UpdateTest.update_user_title_ms  Time elapsed: 0.359 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at com.apitest.UpdateTest.update_user_title_ms(UpdateTest.java:70)
+
